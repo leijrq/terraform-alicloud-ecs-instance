@@ -1,4 +1,4 @@
-// ECS Instance Resource for Module
+// ECS Instance Resource for Module  test!!!
 resource "alicloud_instance" "this" {
   count                               = var.number_of_instances
   image_id                            = element(distinct(compact(concat([var.image_id], var.image_ids))), count.index, )
